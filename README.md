@@ -4,4 +4,4 @@
 
 View
 
-![alt text](https://github.com/michalfujak/UberCloneApp/blob/master/screenshots/screenshot_1.jpg)
+![alt text](https://github.com/michalfujak/CovidApka/blob/master/screenshots/covid_apka_images_0001.jpg)
