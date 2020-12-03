@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/covid_background_activity_start"
+    tools:context=".AffectedCountries">
+
+    <!-- LinearLayout orientation - vertical -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        style="@style/affected_countries_linear_layout_main_vertical"
+        >
+        <!-- Linearlayout_Search components -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/linear_layout_affected_countries_search_components"
+            style="@style/affected_countries_linear_layout_search_components"
+            >
+            <!-- Search components - EditText -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:autofillHints="#ffffff"
+                >
+                <!-- EditText search -->
+                <!-- MaterialEditText and EditText Component search -->
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/countries_components_search"
+                    android:hint="@string/countries_components_search_hint_string"
+                    android:textSize="20sp"
+                    style="@style/countries_components_search_style"
+                    android:inputType="text"
+                    app:met_floatingLabel="highlight"
+                    app:met_underlineColor="@color/color_components_search_underline_type"
+                    app:met_baseColor="@color/color_components_search_base_type"
+                    android:drawablePadding="15dp"
+                    app:met_maxCharacters="20"
+                    app:met_primaryColor="@color/color_components_search_primare_type"
+                    android:drawableStart="@drawable/icon_countries_search_24dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Linearlayout Content Flag -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/linear_layout_affected_countries_flag_content"
+            style="@style/affected_countries_linear_layout_flag_content"
+            >
+            <!-- Flag content -->
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

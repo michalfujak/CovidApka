@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/covid_background_activity_start"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <!-- Header content text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:textColor="@color/color_header_aplication_name_content"
+            android:textSize="20sp"
+            android:text="@string/header_text_content_name_aplication" />
+
+        <!-- AndroidX.cardView -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/cardViewGraphStatisticView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/covid_androidx_cardview_statistic_view_background"
+            >
+            <!-- AndroidX.cardView Content Linearlayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:paddingTop="5dp"
+                >
+                <!-- PieChart view animate  -->
+                <org.eazegraph.lib.charts.PieChart
+                    android:id="@+id/piechart_track_countries_statistic"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    app:egUsePieRotation="true"
+                    app:egLegendTextSize="14sp"
+                    app:egValueTextSize="15sp"
+                    app:egLegendColor="@color/color_eg_piechart_legend_text_color"
+                    app:egValueTextColor="@color/color_eg_piechart_value_text_color"
+                    app:egInnerPaddingColor="@color/color_fill_padding_piechart_statistic"
+                    />
+                <!-- Right menu information -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="30dp"
+                    >
+                    <!-- Piechart menu content -->
+
+                    <!-- Menu Item Total cases -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        >
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_piechart_total_cases_statistic"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="@string/piechart_text_total_cases"
+                            android:textColor="@color/color_piechart_text_color_total_cases_statistic"
+                            android:textSize="13sp"
+                            />
+                    </LinearLayout>
+
+                    <!-- Menu Item Recovered -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        >
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_piechart_recovered_statistic"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="@string/piechart_text_recovered"
+                            android:textColor="@color/color_piechart_text_color_recovered_statistic"
+                            android:textSize="13sp"
+                            />
+                    </LinearLayout>
+
+                    <!-- Menu Item Deaths -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        >
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_piechart_deaths_statistic"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="@string/piechart_text_deaths"
+                            android:textColor="@color/color_piechart_text_color_death_statistic"
+                            android:textSize="13sp"
+                            />
+                    </LinearLayout>
+
+                    <!-- Menu Item Active -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        >
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_piechart_active_statistic"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="@string/piechart_text_active"
+                            android:textColor="@color/color_piechart_text_color_active_statistic"
+                            android:textSize="13sp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/cardViewGraphStatisticView"
+            android:layout_above="@+id/cardViewStatisticTrackCountries"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="100dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/covid_androidx_cardview_stack_countries_view_background"
+            >
+            <!-- AndroidX.cardView Content -->
+            <!-- Covid data from global statistic -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <!-- RelativeLayout Content global stats -->
+                <!-- Loading -->
+                <com.leo.simplearcloader.SimpleArcLoader
+                    android:visibility="visible"
+                    android:id="@+id/global_stats_loader_content"
+                    android:layout_centerInParent="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:arc_style="complete_arc"
+                    app:arc_speed="medium"
+                    app:arc_margin="3dp">
+                </com.leo.simplearcloader.SimpleArcLoader>
+                <!-- ScrollView Global Stats -->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollview_content_global_stats"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <!-- CONTENT -->
+                        <!-- TextView - GlobalStats -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/text_view_content_global_stats"
+                            android:text="@string/piechart_content_view_text_information_global_stats"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textSize="22sp"
+                            android:textColor="@color/color_piechart_content_view_text_color_global_stats"
+                            />
+                        <!-- Content.line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/color_piechart_content_view_text_color_line"
+                            />
+
+                        <!-- RelativeLayout - Cases -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/piechart_content_view_text_information_cases"
+                                android:textColor="@color/color_piechart_content_view_text_color_cases"
+                                android:textSize="18sp"
+                                android:textStyle="italic"
+                                />
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/text_view_content_cases"
+                                android:text="0"
+                                android:textColor="#F6CA44"
+                                android:textAlignment="textEnd"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_alignParentRight="true"
+                                />
+                        </RelativeLayout>
+                        <!-- Content.line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/color_piechart_content_view_text_color_line"
+                            />
+
+                        <!-- RelativeLayout - Recovered -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/piechart_content_view_text_information_recovered"
+                                android:textColor="@color/color_piechart_content_view_text_color_recovered"
+                                android:textSize="18sp"
+                                android:textStyle="italic"
+                                />
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/text_view_content_recovered"
+                                android:text="0"
+                                android:textColor="#F6CA44"
+                                android:textAlignment="textEnd"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_alignParentRight="true"
+                                />
+                        </RelativeLayout>
+                        <!-- Content.line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/color_piechart_content_view_text_color_line"
+                            />
+
+                        <!-- RelativeLayout - Critical -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/piechart_content_view_text_information_critical"
+                                android:textColor="@color/color_piechart_content_view_text_color_critical"
+                                android:textSize="18sp"
+                                android:textStyle="italic"
+                                />
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/text_view_content_critical"
+                                android:text="0"
+                                android:textColor="#F6CA44"
+                                android:textAlignment="textEnd"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_alignParentRight="true"
+                                />
+                        </RelativeLayout>
+                        <!-- Content.line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/color_piechart_content_view_text_color_line"
+                            />
+
+                        <!-- RelativeLayout - Active -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/piechart_content_view_text_information_active"
+                                android:textColor="@color/color_piechart_content_view_text_color_active"
+                                android:textSize="18sp"
+                                android:textStyle="italic"
+                                />
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/text_view_content_active"
+                                android:text="0"
+                                android:textColor="#F6CA44"
+                                android:textAlignment="textEnd"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_alignParentRight="true"
+                                />
+                        </RelativeLayout>
+                        <!-- Content.line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/color_piechart_content_view_text_color_line"
+                            />
+
+                        <!-- RelativeLayout - Today Cases -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/piechart_content_view_text_information_today_cases"
+                                android:textColor="@color/color_piechart_content_view_text_color_today_cases"
+                                android:textSize="18sp"
+                                android:textStyle="italic"
+                                />
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/text_view_content_today_cases"
+                                android:text="0"
+                                android:textColor="#F6CA44"
+                                android:textAlignment="textEnd"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_alignParentRight="true"
+                                />
+                        </RelativeLayout>
+                        <!-- Content.line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/color_piechart_content_view_text_color_line"
+                            />
+
+                        <!-- RelativeLayout - Today deaths -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/piechart_content_view_text_information_today_deaths"
+                                android:textColor="@color/color_piechart_content_view_text_color_today_deaths"
+                                android:textSize="18sp"
+                                android:textStyle="italic"
+                                />
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/text_view_content_today_deaths"
+                                android:text="0"
+                                android:textColor="#F6CA44"
+                                android:textAlignment="textEnd"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_alignParentRight="true"
+                                />
+                        </RelativeLayout>
+                        <!-- Content.line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/color_piechart_content_view_text_color_line"
+                            />
+
+                        <!-- RelativeLayout - Total deaths -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/piechart_content_view_text_information_total_deaths"
+                                android:textColor="@color/color_piechart_content_view_text_color_total_deaths"
+                                android:textSize="18sp"
+                                android:textStyle="italic"
+                                />
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/text_view_content_total_deaths"
+                                android:text="0"
+                                android:textColor="#F6CA44"
+                                android:textAlignment="textEnd"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_alignParentRight="true"
+                                />
+                        </RelativeLayout>
+                        <!-- Content.line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/color_piechart_content_view_text_color_line"
+                            />
+                        <!-- RelativeLayout - Affected countries -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/piechart_content_view_text_information_affected_countries"
+                                android:textColor="@color/color_piechart_content_view_text_color_afftered_countries"
+                                android:textSize="18sp"
+                                android:textStyle="italic"
+                                />
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/text_view_content_affected_countries"
+                                android:text="0"
+                                android:textColor="#F6CA44"
+                                android:textAlignment="textEnd"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_alignParentRight="true"
+                                />
+                        </RelativeLayout>
+                        <!-- Content.line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/color_piechart_content_view_text_color_line"
+                            />
+
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <!-- Button track action -->
+    <Button
+        android:id="@+id/button_stack_countries_continue"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/button_text_track_countries_continue"
+        android:textColor="@color/colorStartingButtonTrackCountriesTextColor"
+        android:background="@drawable/button_stack_countries_background_selected"
+        android:textSize="18sp"
+        android:onClick="goTrackCountries"
+        />
+
+
+</RelativeLayout>
