@@ -2,10 +2,12 @@
     <string name="app_name">CovidApka</string>
 
     <!-- header string, activity start -->
-    <string name="header_text_content_name_aplication">Covid-19 - 21.11.2020 test 1.3.100</string>
+    <string name="header_text_content_name_aplication">Covid-19 - 27.12.2020 test 1.7.100</string>
 
     <!-- ButtonText.Track.Countries -->
     <string name="button_text_track_countries_continue">Vybrať krajinu!</string>
+    <!-- Activity AffectedCountries Back ActionBar button HOME -->
+    <string name="button_actionbar_back_action_home">Voľba krajiny</string>
 
     <!-- PieChart string items statistic TEXT -->
     <string name="piechart_text_total_cases">Celkom pozitívny</string>
@@ -26,4 +28,7 @@
 
     <!-- MaterialEditText Components Search HintString -->
     <string name="countries_components_search_hint_string">Vyhľadaj krajinu</string>
+
+    <!-- Activity CovidDataListItems context string -->
+    <string name="covid_data_list_items_text_context_flag_name">Meno vlajky</string>
 </resources>

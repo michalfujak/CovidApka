@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -26,7 +27,7 @@
             style="@style/affected_countries_linear_layout_search_components"
             >
             <!-- Search components - EditText -->
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -52,19 +53,27 @@
                     app:met_primaryColor="@color/color_components_search_primare_type"
                     android:drawableStart="@drawable/icon_countries_search_24dp"
                     />
-            </LinearLayout>
-        </LinearLayout>
-        <!-- Linearlayout Content Flag -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:background="@drawable/linear_layout_affected_countries_flag_content"
-            style="@style/affected_countries_linear_layout_flag_content"
-            >
-            <!-- Flag content -->
+                <!-- Load Countries ListView -->
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/list_view_countries_flag"
+                    android:layout_below="@id/countries_components_search"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    />
+                <!-- Arc.loader -->
+                <com.leo.simplearcloader.SimpleArcLoader
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/arc_loader_countries_flag"
+                    app:arc_style="simple_arc"
+                    android:visibility="visible"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
 
