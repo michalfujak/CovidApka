@@ -3,11 +3,13 @@ package com.michalfujak.covid19.covidapka;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -49,6 +51,15 @@ public class AffectedCountries extends AppCompatActivity {
 
         // Call fetchListData
         fetchListData();
+
+        // ListView and ClickFocusFlag
+        listViewCountriesFlag.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Clicked
+                startActivity(new Intent(getApplicationContext(), DetailActivity.class).putExtra("position", position));
+            }
+        });
 
         // For ActionBar, button back home.
         // Disabled, menu not exists
@@ -112,8 +123,8 @@ public class AffectedCountries extends AppCompatActivity {
                                 String country = jsonObject.getString("country");
                                 String cases = jsonObject.getString("cases");
                                 String totalCases = jsonObject.getString("todayCases");
-                                String deaths = jsonObject.getString("deaths");
-                                String totalDeaths = jsonObject.getString("todayDeaths");
+                                String deaths = jsonObject.getString("todayDeaths");
+                                String totalDeaths = jsonObject.getString("deaths");
                                 String recovered = jsonObject.getString("recovered");
                                 String todayRecovered = jsonObject.getString("todayRecovered");
                                 String active = jsonObject.getString("active");

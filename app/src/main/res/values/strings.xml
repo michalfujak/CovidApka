@@ -25,6 +25,8 @@
     <string name="piechart_content_view_text_information_total_deaths">Celkom zosnulí:</string>
     <string name="piechart_content_view_text_information_today_deaths">Dnes zosnulí:</string>
     <string name="piechart_content_view_text_information_affected_countries">Postihnuté krajiny:</string>
+    <!-- Detail info Activity -->
+    <string name="detail_info_activity_content_view_text_name_country">Krajina:</string>
 
     <!-- MaterialEditText Components Search HintString -->
     <string name="countries_components_search_hint_string">Vyhľadaj krajinu</string>

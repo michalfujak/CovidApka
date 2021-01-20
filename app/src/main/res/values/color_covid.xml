@@ -57,6 +57,11 @@
     <color name="color_linear_layout_affected_countries_search_component_center">#D97B1FA2</color>  <!-- Purple 50 700  Opacity 85% -->
     <color name="color_linear_layout_affected_countries_search_component_end">#D96A1B9A</color>     <!-- Purple 50 800  Opacity 85% -->
 
+    <!-- Page LinearLayout DetailInfo Activity  -->
+    <color name="color_linear_layout_detail_info_image_flag_start">#D99C27B0</color>   <!-- Purple 50 500  Opacity 85% -->
+    <color name="color_linear_layout_detail_info_image_flag_center">#D97B1FA2</color>  <!-- Purple 50 700  Opacity 85% -->
+    <color name="color_linear_layout_detail_info_image_flag_end">#D96A1B9A</color>     <!-- Purple 50 800  Opacity 85% -->
+
     <!-- MaterialEditText Search Components -->
     <color name="color_components_search_underline_type">#CE93D8</color>                            <!-- Purple 50 200 -->
     <color name="color_components_search_base_type">#CE93D8</color>                                 <!-- Purple 50 200 -->
