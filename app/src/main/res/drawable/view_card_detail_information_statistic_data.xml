@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:angle="-45"
+        android:startColor="@color/color_card_view_detail_information_statistic_data_start"
+        android:centerColor="@color/color_card_view_detail_information_statistic_data_center"
+        android:endColor="@color/color_card_view_detail_information_statistic_data_end"
+        />
+    <corners
+        android:radius="4dp"
+        />
+
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/color_linear_layout_detail_information_statistic_data_stroke"
+        />
+</shape>

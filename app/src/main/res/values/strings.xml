@@ -2,7 +2,7 @@
     <string name="app_name">CovidApka</string>
 
     <!-- header string, activity start -->
-    <string name="header_text_content_name_aplication">Covid-19 - 27.12.2020 test 1.7.100</string>
+    <string name="header_text_content_name_aplication">Covid-19 - 7.4.2021 test 1.9.100</string>
 
     <!-- ButtonText.Track.Countries -->
     <string name="button_text_track_countries_continue">Vybrať krajinu!</string>
@@ -14,6 +14,14 @@
     <string name="piechart_text_recovered">Vyliečení</string>
     <string name="piechart_text_deaths">Mŕtvy</string>
     <string name="piechart_text_active">Aktívny</string>
+
+    <!-- Detail Activity PieChart item statistic text -->
+    <string name="detail_activity_piechart_text_total_cases">Celkom pozitívny</string>
+    <string name="detail_activity_piechart_text_recovered">Vyliečení</string>
+    <string name="detail_activity_piechart_text_critical">Kritické</string>
+    <string name="detail_activity_piechart_text_active">Aktívne</string>
+    <string name="detail_activity_piechart_text_total_death">Celkom zosnulí</string>
+
 
     <!-- PieChart string Content view text informations -->
     <string name="piechart_content_view_text_information_global_stats">Celková štatistika</string>

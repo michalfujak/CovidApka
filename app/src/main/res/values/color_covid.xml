@@ -5,6 +5,11 @@
     <color name="covid_androidx_cardview_statistic_view_background">#D9AB47BC</color>               <!-- Purple 50 400  Opacity 85% -->
     <color name="covid_androidx_cardview_stack_countries_view_background">#D9AB47BC</color>         <!-- Purple 50 400  Opacity 85% -->
 
+    <!-- Detail Activity background -->
+    <color name="colorDetailActivityBackgroundTestStart">#180332</color>                            <!-- Purple 50 Custom [ #180332 ] -->
+    <color name="colorDetailActivityBackgroundTestCenter">#D500F9</color>                           <!-- Purple 50 A400 -->
+    <color name="colorDetailActivityBackgroundTestEnd">#180332</color>                              <!-- Purple 50 Custom [ #180332 ] -->
+
     <!-- Content text, activity start -->
     <color name="color_header_aplication_name_content">#CFD8DC</color>                              <!-- BlueGray 50 100 -->
 
@@ -25,17 +30,37 @@
     <color name="color_eg_piechart_legend_text_color">#CFD8DC</color>                               <!-- BlueGray 50 100 -->
     <color name="color_eg_piechart_value_text_color">#CFD8DC</color>                                <!-- BlueGray 50 100 -->
 
+    <!-- Activity DetailInformationPieChart -->
+    <!-- PieChart DetailInformationStatisticData -->
+    <color name="color_detail_information_fill_padding_piechart_statistic">#FF000000</color>        <!-- Black 000  Opacity 100% -->
+    <color name="color_detail_information_eg_piechart_legend_text_color">#E040FB</color>            <!-- BlueGray 50 100 -->
+    <color name="color_detail_information_eg_piechart_value_text_color">#E040FB</color>             <!-- BlueGray 50 100 -->
+
     <!-- PieChart color items -->
     <color name="color_piechart_total_cases_statistic">#FF9800</color>                              <!-- Orange 50 500 --><!-- Total Cases (sk) Celkom pozitivny -->
     <color name="color_piechart_recovered_statistic">#00E676</color>                                <!-- Green 50 A400 --><!-- Recovered (sk) Vylieceny -->
     <color name="color_piechart_deaths_statistic">#424242</color>                                   <!-- Gray 50 800 --><!-- Deahts (sk) Mrtvy -->
     <color name="color_piechart_active_statistic">#03A9F4</color>                                   <!-- Light Blue 50 500 --><!-- Active (sk) Aktivny -->
 
+    <!-- Detail Activity PieChart items -->
+    <color name="color_detail_activity_piechart_country_total_cases">#FFB300</color>                <!-- Amber 50 500  --><!-- Total Cases (sk) Celkom pozitivny -->
+    <color name="color_detail_activity_piechart_country_recovered">#00C853</color>                  <!-- Green 50 A700 --><!-- Recovered (sk) Vylieceny -->
+    <color name="color_detail_activity_piechart_country_critical">#D50000</color>                   <!-- Red 50 A700 --><!-- Critical (sk) Kriticke -->
+    <color name="color_detail_activity_piechart_country_active">#40C4FF</color>                     <!-- Light Blue 50 A200  --><!-- Active (sk) Aktivny -->
+    <color name="color_detail_activity_piechart_country_total_death">#37474F</color>                <!-- Blue Gray 50 800 --><!-- Death (sk) Mrtvi -->
+
     <!-- PieChart textColor items -->
     <color name="color_piechart_text_color_total_cases_statistic">#CFD8DC</color>                   <!-- BlueGray 50 100 -->
     <color name="color_piechart_text_color_recovered_statistic">#CFD8DC</color>                     <!-- BlueGray 50 100 -->
     <color name="color_piechart_text_color_death_statistic">#CFD8DC</color>                         <!-- BlueGray 50 100 -->
     <color name="color_piechart_text_color_active_statistic">#CFD8DC</color>                        <!-- BlueGray 50 100 -->
+
+    <!-- Detail Activity PieChart textColor -->
+    <color name="color_detail_activity_piechart_text_color_total_cases_statistic">#CFD8DC</color>   <!-- BlueGray 50 100 -->
+    <color name="color_detail_activity_piechart_text_color_recovered_statistic">#CFD8DC</color>   <!-- BlueGray 50 100 -->
+    <color name="color_detail_activity_piechart_text_color_critical_statistic">#CFD8DC</color>   <!-- BlueGray 50 100 -->
+    <color name="color_detail_activity_piechart_text_color_active_statistic">#CFD8DC</color>   <!-- BlueGray 50 100 -->
+    <color name="color_detail_activity_piechart_text_color_total_death_statistic">#CFD8DC</color>   <!-- BlueGray 50 100 -->
 
     <!-- PieChart Content view informations -->
     <color name="color_piechart_content_view_text_color_global_stats">#CFD8DC</color>               <!-- BlueGray 50 100 -->
@@ -57,10 +82,54 @@
     <color name="color_linear_layout_affected_countries_search_component_center">#D97B1FA2</color>  <!-- Purple 50 700  Opacity 85% -->
     <color name="color_linear_layout_affected_countries_search_component_end">#D96A1B9A</color>     <!-- Purple 50 800  Opacity 85% -->
 
+    <!-- Detail information Activity -->
+    <!-- page LinearLayout Affected Country Deail Component -->
+    <color name="color_card_view_detail_component_view_card_start">#CC000000</color>                <!-- Black 000 Opacity 80% -->
+    <color name="color_card_view_detail_component_view_card_center">#CC000000</color>               <!-- Black 000 Opacity 80% -->
+    <color name="color_card_view_detail_component_view_card_end">#CC6A1B9A</color>                  <!-- Purple 50 800 Opacity 80% -->
+    <!-- Stroke -->
+    <color name="color_card_view_detail_component_view_card_stroke">#E040FB</color>                 <!-- Purple 50 A100 -->
+
     <!-- Page LinearLayout DetailInfo Activity  -->
-    <color name="color_linear_layout_detail_info_image_flag_start">#D99C27B0</color>   <!-- Purple 50 500  Opacity 85% -->
-    <color name="color_linear_layout_detail_info_image_flag_center">#D97B1FA2</color>  <!-- Purple 50 700  Opacity 85% -->
-    <color name="color_linear_layout_detail_info_image_flag_end">#D96A1B9A</color>     <!-- Purple 50 800  Opacity 85% -->
+    <color name="color_linear_layout_detail_information_image_flag_start">#CC000000</color>         <!-- Black 000  Opacity 80% -->
+    <color name="color_linear_layout_detail_information_image_flag_center">#CC000000</color>        <!-- Black 000  Opacity 80% -->
+    <color name="color_linear_layout_detail_information_image_flag_end">#806A1B9A</color>           <!-- Purple 50 800  Opacity 50% -->
+    <!-- Stroke -->
+    <color name="color_linear_layout_detail_information_image_flag_stroke">#E040FB</color>          <!-- Purple 50 A100 -->
+
+    <!-- Activity DetailInformation statistic.data -->
+    <color name="color_card_view_detail_information_statistic_data_start">#CC000000</color>         <!-- Black 000 Opacity 80% -->
+    <color name="color_card_view_detail_information_statistic_data_center">#CC000000</color>        <!-- Black 000 Opacity 80% -->
+    <color name="color_card_view_detail_information_statistic_data_end">#CC6A1B9A</color>           <!-- Purple 50 800 Opacity 80% -->
+    <!-- Stroke -->
+    <color name="color_linear_layout_detail_information_statistic_data_stroke">#E040FB</color>      <!-- Purple 50 A100 -->
+
+    <!-- Update 22.4.2021 +  -->
+    <!-- Activity DetailInformation statistic.barChart.data -->
+    <color name="color_card_view_detail_information_statistic_barchart_data_start">#CC000000</color>         <!-- Black 000 Opacity 80% -->
+    <color name="color_card_view_detail_information_statistic_barchart_data_center">#CC000000</color>        <!-- Black 000 Opacity 80% -->
+    <color name="color_card_view_detail_information_statistic_barchart_data_end">#CC6A1B9A</color>           <!-- Purple 50 800 Opacity 80% -->
+    <!-- Stroke -->
+    <color name="color_linear_layout_detail_information_statistic_barchart_data_stroke">#E040FB</color>      <!-- Purple 50 A100 -->
+
+    <!-- Detail information activity Content.text.view.string -->
+    <color name="color_detail_information_content_name_country_text">#B0BEC5</color>                <!-- BlueGray 50 200 -->
+    <color name="color_detail_information_content_cases_text">#B0BEC5</color>                       <!-- BlueGray 50 200 -->
+    <color name="color_detail_information_content_recovered_text">#B0BEC5</color>                   <!-- BlueGray 50 200 -->
+    <color name="color_detail_information_content_critical_text">#B0BEC5</color>                    <!-- BlueGray 50 200 -->
+    <color name="color_detail_information_content_active_text">#B0BEC5</color>                      <!-- BlueGray 50 200 -->
+    <color name="color_detail_information_content_today_cases_text">#B0BEC5</color>                 <!-- BlueGray 50 200 -->
+    <color name="color_detail_information_content_today_death_text">#B0BEC5</color>                 <!-- BlueGray 50 200 -->
+    <color name="color_detail_information_content_total_death_text">#B0BEC5</color>                 <!-- BlueGray 50 200 -->
+    <!-- Detail information activity Content.value.view.integer -->
+    <color name="color_detail_information_content_name_country_value">#E040FB</color>               <!-- Purple 50 A200 -->
+    <color name="color_detail_information_content_cases_value">#E040FB</color>                      <!-- Purple 50 A200 -->
+    <color name="color_detail_information_content_recovered_value">#E040FB</color>                  <!-- Purple 50 A200 -->
+    <color name="color_detail_information_content_critical_value">#E040FB</color>                   <!-- Purple 50 A200 -->
+    <color name="color_detail_information_content_active_value">#E040FB</color>                     <!-- Purple 50 A200 -->
+    <color name="color_detail_information_content_today_cases_value">#E040FB</color>                <!-- Purple 50 A200 -->
+    <color name="color_detail_information_content_today_death_value">#E040FB</color>                <!-- Purple 50 A200 -->
+    <color name="color_detail_information_content_total_death_value">#E040FB</color>                <!-- Purple 50 A200 -->
 
     <!-- MaterialEditText Search Components -->
     <color name="color_components_search_underline_type">#CE93D8</color>                            <!-- Purple 50 200 -->
@@ -71,6 +140,14 @@
     <color name="color_list_view_component_contries_flag_text_color">#CE93D8</color>                <!-- Purple 50 200 --><!-- DISABLED -->
     <!-- Activity ListCovidData Items -->
     <color name="color_list_covid_data_flag_text_view_text_color">#CE93D8</color>                   <!-- Purple 50 200 -->
+
+    <!-- View Card Color -->
+    <!-- ViewcardDetailInformationData -->
+    <color name="view_card_activity_detail_information_data_context">#00000000</color>              <!-- Black - 000 [ transparent ] -->
+    <!-- DetailViewCardStatisticView -->
+    <color name="view_card_activity_detail_information_statistic_data">#00000000</color>            <!-- Black - 000 [ transparent ] -->
+    <!-- DetailViewCardStatisticView -->
+    <color name="view_card_activity_detail_information_statistic_barchart_data">#00000000</color>   <!-- Black - 000 [ transparent ] -->
 </resources>
 
 
