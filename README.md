@@ -12,10 +12,10 @@ Search
 
 ![alt text](https://github.com/michalfujak/CovidApka/blob/master/screenshots/covid_apka_images_0003.jpg)
 
-SK
+SK - PieChart Statistic
 
 ![alt text](https://github.com/michalfujak/CovidApka/blob/master/screenshots/covid_apka_images_0004.jpg)
 
-EN
+SK - Bar Statistic
 
 ![alt text](https://github.com/michalfujak/CovidApka/blob/master/screenshots/covid_apka_images_0005.jpg)
